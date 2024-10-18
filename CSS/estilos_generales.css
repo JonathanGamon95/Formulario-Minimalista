@@ -1,0 +1,173 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    color: aliceblue;
+}
+
+
+body {
+    background-color: #0a2d51;
+    font-family: sans-serif;
+}
+
+
+.cont_imagen_de_fondo {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    filter: blur(10px);
+}
+
+.cont_imagen_de_fondo img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+#HR {
+    border: none;
+    height: 3px;
+    background-color: #387fcb;
+}
+
+.cont_formulario_externo {
+    width: 100vw;
+    height: 100vh;
+    /* background-image: linear-gradient(215deg, #2c3149 0, #242841 50%, #191c33 100%); */
+    background-image: linear-gradient(to right, #083b71, #093f77, #0b427e, #0c4684, #0e4a8b);
+    border: 2px solid #387fcb;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+}
+
+header {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+}
+
+.cont_seccion_iniciar,
+.cont_seccion_registrarse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont_seccion_iniciar button,
+.cont_seccion_registrarse button {
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.cont_formulario_interno {
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    overflow: hidden;
+}
+
+
+#FORMULARIO {
+    width: 200%;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+
+
+
+
+.incio_sesion, .registrarse {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+}
+
+
+
+label {
+    grid-column: 1 / -1;
+    grid-row: 2 / 7;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px
+}
+
+
+input {
+    padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    /* background-color: #3f4564; */
+    background-image: linear-gradient(to right, #052b53, #0d2b4d, #0e4989);
+    color: aliceblue;
+}
+
+h3 {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+}
+
+a {
+    /* color: yellow; */
+    color: #5d96dd;
+    text-decoration: none;
+}
+
+#boton_iniciar_sesion, #boton_registrarse {
+    grid-column: 1 / -1;
+    grid-row: 5 / -1;
+    background-color: #286abb;
+    color: aliceblue;
+    margin: auto;
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#boton_iniciar_sesion:active, #boton_registrarse:active {
+    background-color: #27bb80;
+}
+
+
+input::placeholder {
+    color: aliceblue;
+    opacity: 75%;
+}
+
+input[type="date"] {
+    color: aliceblue;
+    opacity: 75%;
+}

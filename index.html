@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/estilos_generales.css">
+    <link rel="stylesheet" href="./CSS/resoluciones.css">
+
+    <!--link hora y fecha-->
+    <link rel="stylesheet" href="./CSS/hora_y_fecha.css">
+    <title>Mi Formulario</title>
+</head>
+
+<body>
+    <div class="cont_imagen_de_fondo"><img src="./IMAGEN DE FONDO/downtempo-chillout-minimalist-desktop-wallpaper-free-photo.jpg" alt=""></div>
+
+    <div class="cont_formulario_externo">
+        <header>
+            <div class="cont_seccion_iniciar"><button id="B_I">Iniciar</button></div>
+            <div class="cont_seccion_registrarse"><button id="B_R">Registrarse</button></div>
+            <div class="barra_seccion">
+                <hr id="HR">
+            </div>
+        </header>
+
+
+        <div class="cont_formulario_interno">
+            <div id="FORMULARIO">
+                <form action="" method="get" class="incio_sesion">
+                    <label for="">
+                        <input type="text" id="inicio_usuario" placeholder="Usuario" required>
+                        <input type="email" id="inicio_gmail" placeholder="Gmail" required>
+                        <input type="password" id="inicio_contraseña" placeholder="Contraseña" required>
+                        <h3>Olvidaste tu contraseña? <a href="">Clic aqui</a></h3>
+                        <button id="boton_iniciar_sesion">Inciar Sesion</button>
+                    </label>
+                </form>
+
+                <form action="" method="get" class="registrarse">
+                    <label for="">
+                        <input type="text" id="registrar_usuario" placeholder="Usuario" required>
+                        <input type="date" id="registrar_fecha">
+                        <input type="email" id="registrar_gmail" placeholder="Gmail" required>
+                        <input type="password" id="registrar_contraseña" placeholder="Contraseña" required>
+                        <button id="boton_registrarse">Registrarse</button>
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!--ventana hora y fecha-->
+    <div class="cont_hora_y_fecha">
+        <ul class="cont_fecha">
+            <li class="fecha"><p id="DIA">18</p></li>
+            <li class="fecha"><p id="MES">Jul</p></li>
+            <li class="fecha"><p id="AÑO">2024</p></li>
+        </ul>
+
+        <div class="cont_hora_externa">
+            <div class="cont_hora_interna">
+                <p id="HORA">13</p>
+                :
+                <p id="MINUTOS">45</p>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <!--NOTA: la etiqueta form esta bloqueando la animacion de la libreria, para que se reprodusca la funciones de la libreria hay que cambiar la etiqueta "form"-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+
+    <!--libreria hora y fecha-->
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
+    <script src="hora_y_fecha.js"></script>
+</body>
+
+</html>
